@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+
+    <!-- required -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- required -->
+    <title>Kliqstart</title>
+
+  </head>
+  <body>
+    <div class="preloader">
+        <div class="preloader-icon">
+            <span class="loading-dot loading-dot-1"></span>
+            <span class="loading-dot loading-dot-2"></span>
+            <span class="loading-dot loading-dot-3"></span>
+        </div>
+    </div>
+    <header class="main-nav">
+        <nav class="navbar fixed-top navbar-dark navbar-expand-xl">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Kliqstart"></a>
+                <a class="home-link" href="index.html"><span class="home-icon"></span></a>
+            </div>
+            <div class="header-right ml-auto order-2">
+                <a href="javascript:void(0);" id="cart-open"><i class="cart-icon"></i><span class="cart-count">0</span></a>
+                <a href="javascript:void(0);" id="search-open" class="search-icon"><i></i></a>
+                <button class="btn-outline-signin" id="signin-open" type="button"><i></i><span>Sign In</span></button>
+                <a class="home-link" href="index.html"><span class="home-icon"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="cart-pop-up">
+                    <div class="cart-box">
+                        <div class="cart-title">
+                            <h3>Your Cart</h3>
+                        </div>
+                        <div class="cart-list">
+                            <ul>
+                                <li class="bg-blue">
+                                    <div class="cart-prod-title">
+                                        <div class="mr-auto"><h4>Website package 2</h4></div>
+                                        <div><a href="javascript:void(0);"><img src="images/pack-close.png" alt=""></a></div>
+                                    </div>
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto">Qty: 1</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                                <li class="bg-blue">
+                                    <div class="cart-prod-title">
+                                        <div class="mr-auto"><h4>Website package 2</h4></div>
+                                        <div><a href="javascript:void(0);"><img src="images/pack-close.png" alt=""></a></div>
+                                    </div>
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto">Qty: 1</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                                <li class="bg-blue-light">
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto text-uppercase">Total</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-checkout">
+                            <button type="button" class="btn-purple">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-menu">
+                    <div class="search-wrapper">
+                        <form id="form" action="" method="" class="search-form">
+                            <div class="search-title"><h1>Looking for Something?</h1></div>
+                            <div class="search-buttons">
+                                <input id="popup-search" class="form-control" type="text" name="u" placeholder="Search"/>                      
+                                <button type="button" class="btn-red">Search</button><button type="button" id="popup-search-button" class="btn-black">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="signin-pop-up" class="signin-popup-block">
+                    <a href="javascript:void(0);" id="signin-close"><i class="userpopup-close"></i></a>
+                    <div class="user-info d-flex">
+                        <div class="user-pic">
+                            <img class="rounded-circle" src="images/user-pic.png" alt="User Pic">
+                        </div>
+                        <div class="user-pic-right align-self-center">
+                            <h3>Usher Raymond</h3>
+                            <a href="javascript:void(0);">Logout</a>
+                        </div>
+                    </div>
+                    <div class="user-info-list">
+                        <ul>
+                            <li><a href="javascript:void(0);">Domains</a></li>
+                            <li><a href="javascript:void(0);">Mail boxes</a></li>
+                            <li><a href="javascript:void(0);">Billing Payments</a></li>
+                            <li><a href="javascript:void(0);">Vouchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-info-list">
+                        <ul>
+                            <li><a href="javascript:void(0);">Help Center</a></li>
+                            <li><a href="javascript:void(0);">Updates & Releases</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="whatweoffer.html">What we offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who-uses-kliqstart.html">Who uses kliqstart?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-us.html">Why Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">More about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>  
+
+    <div class="contentarea">
+
+        <div class="hero-banner home-banner" style="background-image:url('images/hero-image.jpg')">
+            <div class="container">
+                <div class="banner-area">
+                    <div class="row banner-row">
+                        <div class="col-12 align-self-center">
+                            <div class="banner-content home-banner-text">
+                                <div class="banner-title text-center">
+                                    <h1>On-demand digital for in-demand people</h1>
+                                    <p>Create websites, run campaigns, build great brands. KliqStart is online marketing made easy</p>
+                                </div>
+                                <form class="build-website-form">
+                                    <label class="align-self-center">I want to</label>
+                                    <select class="selectpicker">
+                                        <option value="" >Build a new website for my business...</option>
+                                        <option value="">SEO</option>
+                                        <option value="">Advertise on Google</option>
+                                        <option value="">Reach out on social media</option>
+                                    </select>
+                                    <button type="button" class="btn-pink big-btn">Let’s go!</button>
+                                </form>
+                                <div class="top-social-media">
+                                    <ul>
+                                        <li><a href="javascript:void(0);"><img src="images/facebook-logo.svg" alt="facebook"></a></li>
+                                        <li class="g-plus-icon"><a href="javascript:void(0);"><img src="images/google-plus.svg" alt="Googleplus"></a></li>
+                                        <li><a href="javascript:void(0);"><img src="images/twitter-logo.svg" alt="Twitter"></a></li>
+                                        <li><a href="javascript:void(0);"><img src="images/youtube-play-button.svg" alt="Youtube"></a></li>
+                                        <li><a href="javascript:void(0);"><img src="images/behance-logo.svg" alt="Behance"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="whatcando-wrap">
+                <div class="title text-center">
+                    <h2>What you can do with KliqStart</h2>
+                </div>
+                <div class="owl-carousel box-slider">
+                    <div class="item">
+                        <div class="pkg-box bg-grey">
+                            <div class="pkg-logo">
+                                <div class="pkg-logo-bg"><i><img src="images/wordpress-icon.png" alt=""></i></div>
+                            </div>
+                            <div class="pkg-text">
+                                <div class="pkg-title">
+                                    <h3>Say Hello</h3>
+                                    <h4>Create your own website</h4>
+                                </div>
+                                <div class="pkg-copy">
+                                    <p>Choose a modern and mobile responsive template to create a website that is quick, easy, affordable and suited to your specific business needs.</p>
+                                </div>
+                            </div>
+                            <div class="pkg-btn">
+                                <a href="javascript:void(0);" class="btn-bor-blue">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pkg-box bg-grey">
+                            <div class="pkg-logo">
+                                <div class="pkg-logo-bg"><i><img src="images/seo-icon.png" alt=""></i></div>
+                            </div>
+                            <div class="pkg-text">
+                                <div class="pkg-title">
+                                    <h3>Get Found</h3>
+                                    <h4>Increase your website ranking</h4>
+                                </div>
+                                <div class="pkg-copy">
+                                    <p>Your organic ranking is where your website appears on search engines like Google. The higher your rank, the more quality leads your website will generate.</p>
+                                </div>
+                            </div>
+                            <div class="pkg-btn">
+                                <a href="javascript:void(0);" class="btn-bor-blue">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pkg-box bg-grey">
+                            <div class="pkg-logo">
+                                <div class="pkg-logo-bg"><i><img src="images/google-icon.png" alt=""></i></div>
+                            </div>
+                            <div class="pkg-text">
+                                <div class="pkg-title">
+                                    <h3>Win Customers</h3>
+                                    <h4>Advertise on Google</h4>
+                                </div>
+                                <div class="pkg-copy">
+                                    <p>Advertising on Google is a great way to quickly get your company in front of the right people. You can target your ideal audience based on location and other demographics.</p>
+                                </div>
+                            </div>
+                            <div class="pkg-btn">
+                                <a href="javascript:void(0);" class="btn-bor-blue">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pkg-box bg-grey">
+                            <div class="pkg-logo">
+                                <div class="pkg-logo-bg"><i><img src="images/facebook-icon.png" alt=""></i></div>
+                            </div>
+                            <div class="pkg-text">
+                                <div class="pkg-title">
+                                    <h3>Connect</h3>
+                                    <h4>Reach out on social media</h4>
+                                </div>
+                                <div class="pkg-copy">
+                                    <p>We do not go online, we live online. Your customers interact, rate, review and buy though social media channels such as Facebook. Be a part of the conversation.</p>
+                                </div>
+                            </div>
+                            <div class="pkg-btn">
+                                <a href="javascript:void(0);" class="btn-bor-blue">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="be-inspired-screen" style="background-image:url('images/be-inspired-bg.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="be-inspired-img"><img class="d-none d-lg-block" src="images/purechase-system.png" alt=""><img class="d-block d-lg-none" src="images/purchase-sys-screen-mob.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6">
+                        <div class="be-inspired-cont">
+                            <h2>Be inspired. <br>Live unrestricted.</h2>
+                            <p>Built for startups, business owners and entrepreneurs, KliqStart’s web, marketing, and communications services are simple to use and quick to set up giving you insights, freedom and control over your marketing function.</p>
+                            <a href="javascript:void(0);" class="btn-bor-white">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-kliqstart bg-grey">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="title">
+                            <h2>About KliqStart</h2>
+                            <h4>We understand your world.</h4>
+                        </div>
+                        <div class="cont-text">
+                            <p>We understand your world. There are more things to do than hours in a day yet you also need to ensure your online presence works harder, and smarter, for your business. Your company’s digital identity must look, feel, sound and act as professional as you are. It’s customers, investors or potential partners’ first port of call – it’s your elevator pitch and it’s got to sell. KliqStart removes the red tape, hassle and unwanted costs associated with digital marketing services. A few kliqs are all you need to create a professional website, run an effective marketing campaign and build a great brand.</p>
+                        </div>
+                        <div><a href="javascript:void(0);" class="btn-blue medium-btn">Get started</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-project-info">
+                <ul>
+                    <li>
+                        <h3 class="count">40</h3>
+                        <h4>Projects</h4>
+                    </li>
+                    <li>
+                        <h3 class="count">300</h3>
+                        <h4>Customers</h4>
+                    </li>
+                    <li>
+                        <h3 class="count">8</h3>
+                        <h4>Awards Won</h4>
+                    </li>
+                    <li>
+                        <h3 class="count">2M</h3>
+                        <h4>Lines of Code</h4>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="testimonial-wrap">
+                <div class="title text-center">
+                    <h2>What Our Clients Say About Us</h2>
+                </div>
+                <div class="owl-carousel testimonial">
+                    <div class="item">
+                        <div class="testimonial-box bg-grey">
+                            <div class="client-logo">
+                                <img src="images/altmetric-logo.png" alt="">
+                            </div>
+                            <div class="client-words">
+                                <h4>Clients Name goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box bg-grey">
+                            <div class="client-logo">
+                                <img src="images/ascap-logo.png" alt="">
+                            </div>
+                            <div class="client-words">
+                                <h4>Clients Name goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box bg-grey">
+                            <div class="client-logo">
+                                <img src="images/altmetric-logo.png" alt="">
+                            </div>
+                            <div class="client-words">
+                                <h4>Clients Name goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-box bg-grey">
+                            <div class="client-logo">
+                                <img src="images/ascap-logo.png" alt="">
+                            </div>
+                            <div class="client-words">
+                                <h4>Clients Name goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="faq.html">FAQ's</a></li>
+                                <li><a href="termsofus.html">Terms of Us</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Account</h3>
+                            <ul>
+                                <li><a href="login.html">Sign In</a></li>
+                                <li><a href="register.html">Sign Up</a></li>
+                                <li><a href="resetpassword.html">Reset Password</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>What We Offer</h3>
+                            <ul>
+                                <li><a href="website.html">Website</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                                <li><a href="ppc.html">PPC</a></li>
+                                <li><a href="social.html">Social</a></li>
+                                <li><a href="hosting.html">Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="howitworks.html">How It Works</a></li>
+                                <li><a href="accrediation.html">Accrediation</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="footer-contact">
+                    <ul>
+                        <li><a href="tel:08000023854"><img src="images/footer-phone-icon.png" alt="Phone">0800 002 3854</a></li>
+                        <li><a href="mailto:info@flow.co.za"><img class="foo-e-i" src="images/footer-email-icon.png" alt="Email">info@flow.co.za</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
+    
+  </body>
+</html>

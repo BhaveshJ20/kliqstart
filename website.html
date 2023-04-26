@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+
+    <!-- required -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/smart_wizard.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/smart_wizard_theme_circles.css" type="text/css" />
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- required -->
+    <title>Kliqstart</title>
+
+  </head>
+  <body>
+    <div class="preloader">
+        <div class="preloader-icon">
+            <span class="loading-dot loading-dot-1"></span>
+            <span class="loading-dot loading-dot-2"></span>
+            <span class="loading-dot loading-dot-3"></span>
+        </div>
+    </div>
+    <header class="main-nav">
+        <nav class="navbar fixed-top navbar-dark navbar-expand-xl">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Kliqstart"></a>
+                <a class="home-link" href="index.html"><span class="home-icon"></span></a>
+            </div>
+            <div class="header-right ml-auto order-2">
+                <a href="javascript:void(0);" id="cart-open"><i class="cart-icon"></i><span class="cart-count">0</span></a>
+                <a href="javascript:void(0);" id="search-open" class="search-icon"><i></i></a>
+                <button class="btn-outline-signin" id="signin-open" type="button"><i></i><span>Sign In</span></button>
+                <a class="home-link" href="index.html"><span class="home-icon"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="cart-pop-up">
+                    <div class="cart-box">
+                        <div class="cart-title">
+                            <h3>Your Cart</h3>
+                        </div>
+                        <div class="cart-list">
+                            <ul>
+                                <li class="bg-blue">
+                                    <div class="cart-prod-title">
+                                        <div class="mr-auto"><h4>Website package 2</h4></div>
+                                        <div><a href="javascript:void(0);"><img src="images/pack-close.png" alt=""></a></div>
+                                    </div>
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto">Qty: 1</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                                <li class="bg-blue">
+                                    <div class="cart-prod-title">
+                                        <div class="mr-auto"><h4>Website package 2</h4></div>
+                                        <div><a href="javascript:void(0);"><img src="images/pack-close.png" alt=""></a></div>
+                                    </div>
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto">Qty: 1</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                                <li class="bg-blue-light">
+                                    <div class="cart-prod-desc">
+                                        <div class="mr-auto text-uppercase">Total</div>
+                                        <div>R12, 000</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-checkout">
+                            <button type="button" class="btn-purple">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-menu">
+                    <div class="search-wrapper">
+                        <form id="form" action="" method="" class="search-form">
+                            <div class="search-title"><h1>Looking for Something?</h1></div>
+                            <div class="search-buttons">
+                                <input id="popup-search" class="form-control" type="text" name="u" placeholder="Search"/>                      
+                                <button type="button" class="btn-red">Search</button><button type="button" id="popup-search-button" class="btn-black">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="signin-pop-up" class="signin-popup-block">
+                    <a href="javascript:void(0);" id="signin-close"><i class="userpopup-close"></i></a>
+                    <div class="user-info d-flex">
+                        <div class="user-pic">
+                            <img class="rounded-circle" src="images/user-pic.png" alt="User Pic">
+                        </div>
+                        <div class="user-pic-right align-self-center">
+                            <h3>Usher Raymond</h3>
+                            <a href="javascript:void(0);">Logout</a>
+                        </div>
+                    </div>
+                    <div class="user-info-list">
+                        <ul>
+                            <li><a href="javascript:void(0);">Domains</a></li>
+                            <li><a href="javascript:void(0);">Mail boxes</a></li>
+                            <li><a href="javascript:void(0);">Billing Payments</a></li>
+                            <li><a href="javascript:void(0);">Vouchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-info-list">
+                        <ul>
+                            <li><a href="javascript:void(0);">Help Center</a></li>
+                            <li><a href="javascript:void(0);">Updates & Releases</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="whatweoffer.html">What we offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who-uses-kliqstart.html">Who uses kliqstart?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-us.html">Why Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">More about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>  
+
+    <div class="contentarea">
+
+        <div class="page-title-wrap bg-blue-light">
+            <div class="container">
+                <div class="heading">
+                    <div class="row heading-row">
+                        <div class="col-12 align-self-center">
+                            <div class="page-title text-center">
+                                <h1 class="mb-0">Purchase a Website</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Steps html -->
+        <div class="steps-wrap">
+            <div class="container">
+                <div id="smartwizard">
+                    <ul>
+                        <li><a href="#step-1"><span>1</span><b>Select Package</b><h3><span>Select <br />Package</span></h3></a></li>
+                        <li><a href="#step-2"><span>2</span><b>Website</b><h3><span>Website <br />Info</span></h3></a></li>
+                        <li><a href="#step-3"><span>3</span><b>Content</b><h3><span>Content</span></h3></a></li>
+                        <li><a href="#step-4"><span>4</span><b>Domain</b><h3><span>Domain</span></h3></a></li>
+                        <li><a href="#step-5"><span>5</span><b>Summary</b><h3><span>Summary</span></h3></a></li>
+                        <li></li>
+                    </ul>
+
+                    <div>
+                        <div id="step-1" class="pkg-block">
+                            <div class="package-list">
+                                <div class="row">
+                                    <div class="col-md-4 mb-2">
+                                        <div class="pkg-item bg-grey">
+                                            <div class="pkg-item-list">
+                                                <h3>Package 1</h3>
+                                                <ul>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package1" name="package1">
+                                                            <label for="package1">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package2" name="package2">
+                                                            <label for="package2">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package3" name="package3">
+                                                            <label for="package3">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package4" name="package4">
+                                                            <label for="package4">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package5" name="package5">
+                                                            <label for="package5" class="mb-0">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pkg-item-price">
+                                                <h3>R7, 000</h3>
+                                            </div>
+                                            <div class="pkg-item-btn">
+                                                <a href="javascript:void(0);" class="btn-bor-blue">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-2">
+                                        <div class="pkg-item bg-grey">
+                                            <div class="pkg-item-list">
+                                                <h3>Package 1</h3>
+                                                <ul>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package6" name="package6">
+                                                            <label for="package6">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package7" name="package7">
+                                                            <label for="package7">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package8" name="package8">
+                                                            <label for="package8">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package9" name="package9">
+                                                            <label for="package9">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package10" name="package10">
+                                                            <label for="package10" class="mb-0">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pkg-item-price">
+                                                <h3>R7, 000</h3>
+                                            </div>
+                                            <div class="pkg-item-btn">
+                                                <a href="javascript:void(0);" class="btn-bor-blue">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-2">
+                                        <div class="pkg-item bg-grey">
+                                            <div class="pkg-item-list">
+                                                <h3>Package 1</h3>
+                                                <ul>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package11" name="package11">
+                                                            <label for="package11">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package12" name="package12">
+                                                            <label for="package12">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package13" name="package13">
+                                                            <label for="package13">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package14" name="package14">
+                                                            <label for="package14">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom_checkbox">
+                                                            <input type="checkbox" id="package15" name="package15">
+                                                            <label for="package15" class="mb-0">3 Packages</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pkg-item-price">
+                                                <h3>R7, 000</h3>
+                                            </div>
+                                            <div class="pkg-item-btn">
+                                                <a href="javascript:void(0);" class="btn-bor-blue">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steps-buttons">
+                                <div class="btn-toolbar sw-toolbar sw-toolbar-bottom">
+                                    <div class="btn-group mr-2 sw-btn-group" role="group">
+                                        <button class="btn-blue btn-blue2 big-btn sw-btn-next" type="button">Next:Websiteinfo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-2" class="">
+                            <div class="divider"></div>
+                            <div class="websiteinfo-firstsection">
+                                <div class="row">
+                                    <div class="col-lg-6 col-bor-r">
+                                        <div class="webemailinfo">
+                                            <div class="title">
+                                                <h2><span>1:</span> Enter Your Email Address</h2>
+                                            </div>
+                                            <div class="d-flex">
+                                                <input type="text" class="form-control" name="" placeholder="Email Address"><a href="javascript:void(0);" class="ml-2"><img src="images/i-email-btn.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="webemailinfo">
+                                            <div class="title">
+                                                <h2><span>2:</span> Copywriting</h2>
+                                            </div>
+                                            <div class="">
+                                                <div class="form-group">
+                                                    <div class="form-check radio-btn">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                                                        <label class="form-check-label" for="gridRadios1">I need copywriting help for my 4-5 page?</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check radio-btn">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                        <label class="form-check-label" for="gridRadios2">I will provide my own copywriting for all 4-5 pages</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="package-list">
+                                    <div class="title">
+                                        <h2><span>3:</span> Select One of Our Cool Templates</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-2">
+                                            <div class="pkg-item bg-grey">
+                                                <div class="column-layout">
+                                                    <div class="layout-title">2 Column</div>
+                                                    <div class="layout-img"><img src="images/2-column-layout.png" alt=""></div>
+                                                </div>
+                                                <div class="pkg-item-btn text-center">
+                                                    <a href="javascript:void(0);" class="btn-bor-blue">Select this one</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <div class="pkg-item bg-grey">
+                                                <div class="column-layout">
+                                                    <div class="layout-title">1/3 Right Column</div>
+                                                    <div class="layout-img"><img src="images/1-3-right-column.png" alt=""></div>
+                                                </div>
+                                                <div class="pkg-item-btn text-center">
+                                                    <a href="javascript:void(0);" class="btn-bor-blue">Select this one</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <div class="pkg-item bg-grey">
+                                                <div class="column-layout">
+                                                    <div class="layout-title">3 Column</div>
+                                                    <div class="layout-img"><img src="images/3-column-layout.png" alt=""></div>
+                                                </div>
+                                                <div class="pkg-item-btn text-center">
+                                                    <a href="javascript:void(0);" class="btn-bor-blue">Select this one</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="colorscheme-wrap">
+                                <div class="title">
+                                    <h2><span>4:</span> Select a Colour Scheme</h2>
+                                </div>
+                                <div class="color-shceme-option">
+                                    <div class="color-shceme-option-top">
+                                        <div class="form-group">
+                                            <div class="form-check radio-btn">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                                <label class="form-check-label" for="gridRadios3">Select colour option</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check radio-btn">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                                <label class="form-check-label" for="gridRadios4">Customize your own colours</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steps-buttons">
+                                <div class="btn-toolbar sw-toolbar sw-toolbar-bottom">
+                                    <div class="btn-group mr-2 sw-btn-group" role="group">
+                                        <button class="btn-blue btn-blue2 big-btn sw-btn-next" type="button">Next:Content</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-3" class="">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <div class="steps-buttons">
+                                <div class="btn-toolbar sw-toolbar sw-toolbar-bottom">
+                                    <div class="btn-group mr-2 sw-btn-group" role="group">
+                                        <button class="btn-blue btn-blue2 big-btn sw-btn-next" type="button">Next:Domain</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-4" class="">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <div class="steps-buttons">
+                                <div class="btn-toolbar sw-toolbar sw-toolbar-bottom">
+                                    <div class="btn-group mr-2 sw-btn-group" role="group">
+                                        <button class="btn-blue btn-blue2 big-btn sw-btn-next" type="button">Next:Summary</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-5" class="">
+                            <h3 class="border-bottom border-gray pb-2">Step 5 Content</h3>
+                            <div class="card">
+                                <div class="card-header">My Details</div>
+                                <div class="card-block p-0">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr> <th>Name:</th> <td>Tim Smith</td> </tr>
+                                            <tr> <th>Email:</th> <td>example@example.com</td> </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="steps-buttons">
+                                <div class="btn-toolbar sw-toolbar sw-toolbar-bottom">
+                                    <div class="btn-group mr-2 sw-btn-group" role="group">
+                                        <button class="btn-blue btn-blue2 big-btn sw-btn-next" type="button">Purchase Website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="faq.html">FAQ's</a></li>
+                                <li><a href="termsofus.html">Terms of Us</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Account</h3>
+                            <ul>
+                                <li><a href="login.html">Sign In</a></li>
+                                <li><a href="register.html">Sign Up</a></li>
+                                <li><a href="resetpassword.html">Reset Password</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>What We Offer</h3>
+                            <ul>
+                                <li><a href="website.html">Website</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                                <li><a href="ppc.html">PPC</a></li>
+                                <li><a href="social.html">Social</a></li>
+                                <li><a href="hosting.html">Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="howitworks.html">How It Works</a></li>
+                                <li><a href="accrediation.html">Accrediation</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="footer-contact">
+                    <ul>
+                        <li><a href="tel:08000023854"><img src="images/footer-phone-icon.png" alt="Phone">0800 002 3854</a></li>
+                        <li><a href="mailto:info@flow.co.za"><img class="foo-e-i" src="images/footer-email-icon.png" alt="Email">info@flow.co.za</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.smartWizard.min.js"></script>
+    <script src="js/steps.js"></script>
+    <script src="js/common.js"></script>
+    
+  </body>
+</html>
